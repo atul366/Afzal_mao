@@ -41,7 +41,7 @@ class AccountPage extends StatelessWidget {
                        iconColor: Colors.white,
                        iconSize:Dimensions.height10*5/2 ,
                        size: Dimensions.height10*5,),
-                     bigText:BigText(text:"Atul" ,)
+                     bigText:BigText(text:"Lavanya" ,)
                  ),
                  SizedBox(height:Dimensions.height20 ,),
                  //phone
@@ -51,7 +51,7 @@ class AccountPage extends StatelessWidget {
                        iconColor: Colors.white,
                        iconSize:Dimensions.height10*5/2 ,
                        size: Dimensions.height10*5,),
-                     bigText:BigText(text:"8645537333" ,)
+                     bigText:BigText(text:"9014223982" ,)
                  ),
                  SizedBox(height:Dimensions.height20 ,),
                  //email
@@ -61,7 +61,7 @@ class AccountPage extends StatelessWidget {
                        iconColor: Colors.white,
                        iconSize:Dimensions.height10*5/2 ,
                        size: Dimensions.height10*5,),
-                     bigText:BigText(text:"tudresh@gamil.com" ,)
+                     bigText:BigText(text:"phani.lavi@gamil.com" ,)
                  ),
                  SizedBox(height:Dimensions.height20 ,),
                  //address
@@ -71,7 +71,7 @@ class AccountPage extends StatelessWidget {
                        iconColor: Colors.white,
                        iconSize:Dimensions.height10*5/2 ,
                        size: Dimensions.height10*5,),
-                     bigText:BigText(text:"Enter your address" ,)
+                     bigText:BigText(text:"Gurgav, Mumbai" ,)
                  ),
                  SizedBox(height:Dimensions.height20 ,),
                  //message
@@ -81,7 +81,7 @@ class AccountPage extends StatelessWidget {
                        iconColor: Colors.white,
                        iconSize:Dimensions.height10*5/2 ,
                        size: Dimensions.height10*5,),
-                     bigText:BigText(text:"Mayank" ,)
+                     bigText:BigText(text:"Chat with us" ,)
                  ),
                  SizedBox(height:Dimensions.height20 ,),
                ],),

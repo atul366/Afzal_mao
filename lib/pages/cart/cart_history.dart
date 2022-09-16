@@ -152,7 +152,7 @@ class CartHistory extends StatelessWidget {
                                             borderRadius:BorderRadius.circular(Dimensions.radius15/3),
                                             border:Border.all(width:1, color: AppColors.paraColor ),
                                           ),
-                                          child: SmallText(text:"one more",color:AppColors.blueShade),
+                                          child: SmallText(text:"one more",color:AppColors.paraColor),
                                         ),
                                       )
                                     ],
