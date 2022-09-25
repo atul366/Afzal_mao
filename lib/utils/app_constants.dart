@@ -2,7 +2,7 @@ class AppConstants{
   static const String APP_NAME = "DBFood";
   static const int APP_VERSION = 1;
 
-  static const String baseUrl = "http://192.168.214.3:8000";
+  static const String baseUrl = "http://192.168.0.102:8000";
   //static const String baseUrl = "http://mvs.bslmeiyu.com";
   static const String popularProductUri = "/api/v1/products/popular";
 
@@ -11,8 +11,11 @@ class AppConstants{
 
   //auth end points
   static const String registration_Uri = "/api/v1/auth/register";
+  static const String login_Uri = "/api/v1/auth/login";
 
   static const String token = "DBToken";
+  static const String phone = "";
+  static const String password = "";
   static const String upload_Url = "/uploads/";
   static const String CART_LIST ="cart-list";
   static const String CART_HISTORY_LIST ="cart-history-list";

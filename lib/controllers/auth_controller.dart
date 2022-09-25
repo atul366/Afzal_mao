@@ -14,6 +14,7 @@ bool get isLoading =>_isLoading;
 
 Future<ResponseModel> registration(SignUpBody signUpBody) async {
   _isLoading=true;
+  update();
   Response response=await authRepo.registration(signUpBody);
   late ResponseModel responseModel;
   if(response.statusCode==200){
@@ -22,8 +23,31 @@ Future<ResponseModel> registration(SignUpBody signUpBody) async {
   }else{
     responseModel =ResponseModel(true, response.statusText!);
   }
-  _isLoading=true;
+  _isLoading=false;
   update();
   return responseModel;
 }
+Future<ResponseModel> login(String email,String password) async {
+  print("Getting token");
+  print(authRepo.getUserToken().toString());
+  _isLoading=true;
+  update();
+  Response response=await authRepo.login(email,password);
+  late ResponseModel responseModel;
+  if(response.statusCode==200){
+    print("Backend token");
+    authRepo.saveUserToken(response.body["token"]);
+    print(response.body["token"].toString());
+    responseModel =ResponseModel(true, response.body["token"]);
+  }else{
+    responseModel =ResponseModel(true, response.statusText!);
+  }
+  _isLoading=false;
+  update();
+  return responseModel;
+}
+void saveUserNumberAndPassword(String number,String password)  {
+authRepo.saveUserNumberAndPassword(number, password);
+}
+
 }
