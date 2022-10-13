@@ -1,6 +1,7 @@
 import 'package:afzal_mao/base/show_custom_snackbar.dart';
 import 'package:afzal_mao/controllers/auth_controller.dart';
 import 'package:afzal_mao/models/signup_body_model.dart';
+import 'package:afzal_mao/routes/route_helper.dart';
 import 'package:afzal_mao/utils/colors.dart';
 import 'package:afzal_mao/widgets/big_text.dart';
 import 'package:flutter/gestures.dart';
@@ -55,6 +56,7 @@ showCustomSnackBar("Type in your name",title: "Name");
         authController.registration(signUpBody).then((status){
           if(status.isSuccess){
            print("success registration");
+           Get.offNamed(RouteHelper.getInitial());
           }else{
             showCustomSnackBar(status.message);
           }

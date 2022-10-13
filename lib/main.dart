@@ -32,9 +32,9 @@ Get.find<CartController>().getCartData();
           debugShowCheckedModeBanner: false,
           title: 'Flutter Demo',
           //home:SignUpPage(),
-          home:SignInPage(),
+          //home:SignInPage(),
           //home: SplashScreen(),
-         //initialRoute: RouteHelper.getSplashPage(),
+         initialRoute: RouteHelper.getSplashPage(),
           getPages: RouteHelper.routes,
         );
       });
