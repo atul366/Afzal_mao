@@ -113,14 +113,12 @@ class AccountPage extends StatelessWidget {
             ],
           ),
         ):
-        CustomLoader()):
+         CustomLoader()):
         Container(
-
             child:Center(child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-
               width:double.maxFinite,
               height:Dimensions.height20*8,
               margin:EdgeInsets.only(left:Dimensions.width20,right:Dimensions.width20),

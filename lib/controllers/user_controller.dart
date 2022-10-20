@@ -30,8 +30,8 @@ class UserController extends GetxController implements GetxService {
     }
     update();
 
-    _isLoading = false;
-    update();
+    //_isLoading = false;
+    //update();
     return responseModel;
   }
 }
